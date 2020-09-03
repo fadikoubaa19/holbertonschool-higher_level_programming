@@ -1,8 +1,8 @@
 #!/usr/bin/python3
-def remove_char_at(str, n):
-    word = ""
-    l = len(str)
-    for c in range(0, l):
-        if c != n:
-            newstr = word + str[c]
-    return(newstr)
+def print_last_digit(number):
+    if number < 0:
+        print("{:d}".format(-number % 10), end='')
+        return(-number % 10)
+    else:
+        print("{:d}".format(number % 10), end='')
+        return(number % 10)
