@@ -1,4 +1,9 @@
 #!/usr/bin/python3
+"""function empty square
+"""
+
+
 class Square:
-    __dict__ = "Square"
-    __var__ = {}
+    """function empty square
+    """
+    pass
