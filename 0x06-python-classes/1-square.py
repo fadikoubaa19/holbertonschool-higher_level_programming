@@ -1,7 +1,10 @@
 #!/usr/bin/python3
-class Square:
-    __size__ = "Square"
-    __size = {}
+"""class and size
+"""
 
-    def __init__(self, __size=0):
+
+class Square:
+    """class and size
+    """
+    def __init__(self, __size):
         self.__size = __size
