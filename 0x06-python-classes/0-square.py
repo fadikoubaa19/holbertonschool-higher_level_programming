@@ -1,4 +1,4 @@
 #!/usr/bin/python3
 class Square:
-    __Sq__ = "Square"
+    __dict__ = "Square"
     __var__ = {}
