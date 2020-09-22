@@ -4,7 +4,7 @@
 
 
 class Square:
-    """function size 
+    """function size
     """
     def __init__(self, size):
         self.__size = size
