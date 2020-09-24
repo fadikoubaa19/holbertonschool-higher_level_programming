@@ -1,41 +1,25 @@
+#ifndef LISTS_H
+#define LISTS_H
 #include <stdio.h>
 #include <stdlib.h>
-#include "lists.h"
 /**
- *is_palindrome - for holberton school
- *@head: jkjkj
- *Return: from zero to hero
+ * struct listint_s - singly linked list
+ * @n: integer
+ * @next: points to the next node
+ *
+ * Description: singly linked list node structure
+ * for Holberton project
  */
-int is_palindrome(listint_t **head)
-{
-	int a = 0;
-	int b = 0;
-	listint_t *temp = *head;
+typedef struct listint_s {
+    int n;
+    struct listint_s *next;
+} listint_t;
 
-	if (*head == NULL)
-		return (1);
-	while (temp->next != NULL)
-	{
-		temp = temp->next;
-		b++;
-	}
-	b = b + 1;
-	temp = *head;
-	while (b > 0)
-	{
-		while (a != a - 1)
-		{
-			a++;
-			temp = temp->next;
-		}
-		a = 0;
-		if ((*head)->n != temp->n)
-		{
-			return (0);
-		}
-		*head = (*head)->next;
-		temp = (*head);
-		b = b - 2;
-	}
-	return (1);
-}
+size_t print_listint(const listint_t *h);
+listint_t *add_nodeint_end(listint_t **head, const int n);
+void free_listint(listint_t *head);
+
+int is_palindrome(listint_t **head);
+
+listint_t *reverse(listint_t *head);
+
