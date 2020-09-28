@@ -7,6 +7,7 @@ class Rectangle:
     """function empty rectangle
     """
     pass
+
     def __init__(self, width=0, height=0):
         self.width = width
         self.height = height
@@ -32,6 +33,6 @@ class Rectangle:
             raise TypeError('height must be an integer')
         if value < 0:
             raise TypeError('height must be >= 0')
+
     def getStats(self):
         return "area:      %s\nperimeter: %s" % (self.area(), self.perimeter())
-
