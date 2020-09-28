@@ -15,6 +15,7 @@ class Rectangle:
         self.height = height
         Rectangle.number_of_instances += 1
         Rectangle.print_symbol
+
     def area(self):
         return self.width * self.height
 
@@ -52,4 +53,3 @@ class Rectangle:
 
     def __repr__(self):
         return 'Rectangle({:d}, {:d})'.format(self.width, self.height)
-
