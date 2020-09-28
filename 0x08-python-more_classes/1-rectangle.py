@@ -1,12 +1,12 @@
 #!/usr/bin/python3
-"""module rectangle"""
+"""function empty rectangle
+"""
 
 
 class Rectangle:
-    """class rectangle
-    args: width
-    height"""
-
+    """function empty rectangle
+    """
+    pass
     def __init__(self, width=0, height=0):
         """fucntion
         args
