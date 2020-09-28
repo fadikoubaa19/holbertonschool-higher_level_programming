@@ -1,9 +1,8 @@
 #!/usr/bin/python3
-"""function empty rectangle
-"""
+"""module empty class"""
 
 
 class Rectangle:
-    """function empty rectangle
-    """
-    pass
+    """class rectangle """
+    def rectangle(self):
+        return
