@@ -2,6 +2,7 @@
 ''' a function that  add two integers
 '''
 
+
 def add_integer(a, b=98):
     ''' add_integer simple function
     args
