@@ -10,8 +10,8 @@ class MyInt(int):
 
     def __eq__(self, other):
         """function equal =!"""
-        return(self.value != other)
+        return self.value != other
 
     def __ne__(self, other):
         """function equal =="""
-        return(self.value == other)
+        return self.value == other
