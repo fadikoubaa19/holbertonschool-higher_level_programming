@@ -18,7 +18,7 @@
 <li>You are not allowed to import any module</li>
 
 4-inherits_from.py:Write a function that returns True if the object is an instance of a class that inherited (directly or indirectly) from the specified class ; otherwise False.
-
+<br>
 <li>Prototype: def inherits_from(obj, a_class):</li>
 <li>You are not allowed to import any module</li>
 
