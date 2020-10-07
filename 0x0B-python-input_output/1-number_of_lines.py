@@ -1,7 +1,6 @@
 #!/usr/bin/python3
 def number_of_lines(filename=""):
-    lines = 0
-    with open(filename, encoding='utf-8') as f:
-        for line in f:
-            lines += 1
-    return lines
+    with open(filename) as file:
+        lines = len(file.read())
+    return(lines)
+
