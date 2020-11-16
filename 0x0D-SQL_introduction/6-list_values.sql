@@ -1,2 +1,2 @@
 -- List all rows
-SELECT * FROM temperatures;
+SELECT * FROM first_table;
