@@ -1,13 +1,6 @@
 #!/usr/bin/python3
 ''' Module to print all states '''
 
-#!/usr/bin/python3
-''' lists all states from database hbtn_0e_0_usa where name matches argv[4] '''
-
-
-#!/usr/bin/python3
-''' lists all states from database hbtn_0e_0_usa where name matches argv[4] '''
-
 
 if __name__ == "__main__":
     from sys import argv
