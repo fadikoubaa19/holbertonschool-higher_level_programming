@@ -10,7 +10,7 @@ if __name__ == "__main__":
     db = MySQLdb.connect(user=argv[1],
                          passwd=argv[2],
                          db=argv[3])
-    c = db.c()
+    c = db.cursor()
     c.execute("SELECT * from states ORDER BY states.id")
     state_list = c.fetchall()
     for states in list:
