@@ -15,5 +15,6 @@ if __name__ == "__main__":
     cur.execute("SELECT * FROM states ORDER BY states.id")
     states_list = cur.fetchall()
     for state in state_list:
-        print("({}, '{}')".format(state[0], state[1]))
+        print(state)
     cur.close()
+    db.close()
