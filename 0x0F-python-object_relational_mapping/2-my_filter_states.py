@@ -1,8 +1,7 @@
 #!/usr/bin/python3
 ''' Module to print all states '''
-if __name__ == "__main__":
     import MySQLdb
-    import sys
+    from sys import argv
 
 if __name__ == "__main__":
     db = MySQLdb.connect(host="localhost",
