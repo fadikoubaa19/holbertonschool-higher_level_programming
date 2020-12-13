@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 """module that contains city fetech"""
-from sys import argv
+import sys
 from model_state import Base, State
 from model_city import City
 from sqlalchemy.orm import sessionmaker
@@ -14,7 +14,7 @@ if __name__ == "__main__":
     Base.metadata.create_all(engine)
     session = sessionmaker()
     session = session(bind=engine)
-    for s, c in session.query(City, State).filter(City.state_id.like(
+    for state, city in session.query(City, State).filter(City.state_id.like(
             State.id)):
-        print("{}: ({}) {}".format(s.name, c.id, c.name))
+        print("{}: ({}) {}".format(state.name, city.id, city.name))
     session.close()
