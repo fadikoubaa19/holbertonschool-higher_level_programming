@@ -1,5 +1,7 @@
 #!/usr/bin/python3
-""" Lists all State objects"""
+""" that module list all states."""
+
+
 from sys import argv
 from sqlalchemy import create_engine
 from sqlalchemy.orm import sessionmaker
@@ -12,7 +14,7 @@ if __name__ == "__main__":
     Session = sessionmaker(bind=engine)
     session = Session()
     state = session.query(State).order_by(State.id).first()
-    if hell is None:
+    if state is None:
         print("Nothing")
     else:
-        print("{}: {}".format(hell.id, hell.name))
+        print("{}: {}".format(state.id, state.name))
