@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-# fetchall sqlalchemy
+""" module that containe a delete state"""
 if __name__ == "__main__":
     import sys
     from sqlalchemy.orm import sessionmaker
@@ -12,7 +12,7 @@ if __name__ == "__main__":
     Base.metadata.create_all(engine)
     session = sessionmaker()
     session = session(bind=engine)
-    row = session.query(State).filter(State.name.contains('a'))
-    for hell in row:
-        session.delete(hell)
+    ge = session.query(State).filter(State.name.contains('a'))
+    for row in ge:
+        session.delete(row)
     session.commit()
