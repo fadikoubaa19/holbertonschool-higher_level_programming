@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-''' POST request that pass an  URL and displays response  '''
+''' POST request that pass an  URL and displays response'''
 import urllib.request as request
 import urllib.parse as parse
 from sys import argv
