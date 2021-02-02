@@ -1,8 +1,10 @@
 #!/usr/bin/node
-let ali = process.argv.length - 2;
-if (ali < 1) {
+
+const process = require('process');
+
+if (process.argv.length < 3) {
   console.log('No argument');
-} else if (ali === 1) {
+} else if (process.argv.length === 3) {
   console.log('Argument found');
 } else {
   console.log('Arguments found');
