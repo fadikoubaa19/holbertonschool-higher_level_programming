@@ -1,6 +1,4 @@
 #!/usr/bin/node
-//build square by X's number
-
 const process = require('process');
 if (isNaN(parseInt(process.argv[2]))) {
   console.log('Missing size');
