@@ -1,6 +1,6 @@
 #!/usr/bin/node
 exports.esrever = function (list) {
-  let newone = [];
+  const newone = [];
   for (let i = 0; i < list.length; i++) {
     newone.unshift(list[i]);
   }
